@@ -57,3 +57,24 @@ num1 = 10
 num2 = 6
 somma(num1, num2) # non devo usare print 
 
+# esercizio: stampa con output 5 + 5 = 10 con format
+
+def somma (a, b):
+    s = a + b
+    return (s)
+num1 = 5
+num2 = 5
+
+print('{} + {} = {}'.format(num1, num2, somma(num1, num2)))
+
+# oppure 
+
+def somma (a, b):
+    s = a + b
+    return (s)
+num1 = 5
+num2 = 5
+x = somma(num1, num2) # assegnazione 
+print('{} + {} = {}'.format(num1, num2, x))
+
+
