@@ -1,0 +1,124 @@
+# Lezione 1 - 27.04
+
+# PRINT per stampare la riga
+
+print('Hello world') # questo comando mi stampa la stringa hello world 
+print("Hello world")
+print('Ciao a tutti!')
+print('Phyton')
+
+# per commentare, per isolare parti di codice
+# '''  ''' per commentare più righe
+'''
+print("Hello world")
+print('Ciao a tutti!')
+print('Phyton')
+'''
+# ASSEGNAZIONE di VARIABILI
+
+nome = 'chiara' # variabile nome, devo specificare cosa è la variabile mettendo chiara tra ''
+print(nome)
+# stringa nome 
+# int intero numero senza virgola
+# float numero con virgola
+# bool true, false, or, and
+# None variabile che non ha nessun tipo, variabile che non attivo
+
+num = 23
+voto = 23.5
+
+print(nome)
+print(num)
+print(voto)
+
+print(nome, num, voto)
+
+print(type(nome)) # TYPE per il tipo di varibaile in questo caso string
+
+print(nome, type(nome))
+print(num, type(num))
+print(voto, type(voto))
+
+# tipi diversi di varibaili non possono essere concatenati, stampati
+
+# da intero a stringa 
+num = 5
+print(num, type(num))
+num_str = str(num)
+print(num, type(num))
+print(num_str, type(num_str))
+# stesso valore ma nel primo caso me lo stampa come intero, nel secodno come stringa
+
+# ASSEGNAZIONE A INPUT
+# input vengono sempre letti come stringa
+
+nome = input()
+# barretta in shell, scrivo simone, mi assegna simone al nome
+#type(nome) esce class'str'
+nome = input('inserire nome: ')
+print('Il mio nome è ' + nome) # inserire alice
+# concatenazione delle stringhe
+
+# NOTAZIONE FORMAT 
+# non serve convertire il tipo della variabile 
+nome = input('inserire nome: ')
+print('Il mio nome è {}'.format(nome))
+
+num = int(input('inserire numero: '))
+print('la variabile è di tipo{}'.format(type(num)))
+
+num = int(input('inserire numero: '))
+print('alla variabile è stato assegnato il valore{} ed è di tipo{}'.format(type(num)))
+# {} mettere numero che deve essere stampato, seconde {} il tipo di varibile
+
+# che succede?
+num = int(input('inserire numero: '))
+print('alla variabile è stato assegnato il valore ' + num + 'ed è di tipo ' +type(num))
+# sono formati diversi
+
+# OPERATORI MATEMATICI
+
+# addizione +
+# sottrazione -
+# moltiplicazione *
+# esponente **
+# divisione /
+
+a = 5
+b = 10
+
+print(a, b)
+
+somma = a + b
+print(somma) # o scrivo somma in shell
+print('la somma di {} e {}' è {}.format(a, b, somma))
+# primo {} a, secondo {}b, terzo {}somma
+
+sottr = a - b
+print('la sottrazione di {} e {} è {}'.format(a, b, sottr))
+
+# CONCATENAZIONE DI STRINGHE
+frase1 = 'ciao ' # mettere spazio 
+frase2 = 'si ' # assegnazione 
+
+frase_conc = frase1 + frase2
+frase_rip = frase1 * 2
+
+print(frase_conc)
+print(frase_rip)
+
+# esercizio: creare frase finale -  somma
+a = 'Supercalifragilisti'
+b = 'chespiralidoso'
+
+frase_finale = a + b
+print(frase_finale) # oppure scrivo direttamente su shell frase_finale
+
+# esercizio: stampare frase - concatenazione, moltiplicazione  
+frase1 = 'andale '
+frase2 = 'ariba '
+
+out = (frase1 * 2) + (frase2 * 2)
+print(out) # oppure scrivo direttamente out su shell, prima eseguo
+# parentesi per priorità, in questo caso possono essere omesse 
+
