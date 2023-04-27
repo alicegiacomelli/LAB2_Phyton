@@ -122,3 +122,69 @@ out = (frase1 * 2) + (frase2 * 2)
 print(out) # oppure scrivo direttamente out su shell, prima eseguo
 # parentesi per priorità, in questo caso possono essere omesse 
 
+# MATH (libreria) modulo per operatori matematici complessi 
+# dichiarare moduli all'inizio dello script 
+
+# metodo 1
+
+import math # modulo completo
+pigreco = math.pi # devo richiamare pi greco 
+print(pigreco)
+# necessario stampare, in questo caso, pi greco per averlo nel modulo math nel caso import math
+
+# metodo 2
+
+from math import pi # importa solo pi greco
+
+# metodo 3
+
+from math import * # * importo già tutto, non devo stampare niente
+print(pi)
+
+# metodo 4 
+import math
+print(math.pi)
+print(int(math.sqrt(81))) # int per avere come risultato il valore intero senza virgola
+# in questo caso radice quadrata di 81 è 9 non serve 9.0
+
+# lavora solo con angoli in radianti!
+
+a1 = pi/2 # 90° in radianti
+# sin1 = sin(a1)
+# print(int(sin1))
+a2 = pi # 180°
+a3 = (3/2)*pi # 270°
+a4 = 2*pi # 360°
+
+# seno
+sin1 = int(sin(a1)) # int per avere numero senza virgola 
+sin2 = int(sin(a2))
+sin3 = int(sin(a3))
+sin4 = int(sin(a4))
+
+print(sin1, sin2, sin3, sin4)
+
+# coseno
+cos1 = int(cos(a1))
+cos2 = int(cos(a2))
+cos3 = int(cos(a3))
+cos4 = int(cos(a4))
+
+print(cos1, cos2, cos3, cos4)
+
+# CONVERTIRE angolo da GRADI a RADIANTI
+from math import *
+
+angolo = 180
+ang_rad = radians (angolo)
+print(ang_rad) # stampare a schermo
+
+# CONVERTIRE da RADIANTI a GRADI
+from math import *
+
+angolo = pi
+ang_gradi = int(degrees(angolo))
+print(ang_gradi)
+
+# ci sono delle PAROLE VIETATE cioè parole legate a funzioni che non si possono usare per assegnare variabili !
+
