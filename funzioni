@@ -1,0 +1,59 @@
+# Lezione 1 - 27.04
+
+# FUNZIONI 
+# mi permettono di operarare azioni 
+# def nomefunzione (parametri) 
+# parametro = valore che la funzione si aspetta per eseguire determinate azioni  
+
+# funzione
+def stampa (n): # stampa nome funzione che do io 
+    return n    # : dico che questa funzione mi restituisce n 
+# funzione può essere richiamata più volte nello script
+
+# main script 
+nome = 'camillo' # assegnazione 
+print(stampa(nome)) # stampa a schermo
+
+# esercizio 
+def pippo (n): # assegno alla funzione il nome pippo
+    return n*2  # pippo mi vale n*2
+
+nome = 'camillo'
+nome1 = 'pinguino'
+num = 44
+
+print(pippo(nome), pippo(nome1), pippo(num))
+
+# esecizio somma - questa funzione deve restituire la somma tra 2 numeri 
+def somma (a, b):
+    return a + b
+# oppure
+def somma (a, b):
+    s = a + b
+    return s
+
+num1 = 10
+num2 = 6
+
+x = somma(num1, num2) # altra assegnazione, valore restituito dalla funzione 
+print(x)
+
+# oppure
+print (somma(num1, num2))
+
+# perchè a b e non num1 num2 ???
+# se scrivo a e b in shell sono VARIABILI LOCALI e non sono definite, locale nella funzione
+# se scrivo num1 e num2 in shell sono VARIABILI GLOBALI, sono definite, posso accerdervi da ogni parte del programma
+
+# RETURN o PRINT?
+# return valore che ritorno 
+# se utilizzo print non devo poi fare print 
+
+def somma (a, b):
+    s = a + b
+    print (s) # mettere le parentesi 
+
+num1 = 10
+num2 = 6
+somma(num1, num2) # non devo usare print 
+
