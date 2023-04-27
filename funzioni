@@ -77,4 +77,13 @@ num2 = 5
 x = somma(num1, num2) # assegnazione 
 print('{} + {} = {}'.format(num1, num2, x))
 
+# esercizio : stesso procedimento con dati in input
 
+def somma (a, b):
+    s = a + b
+    return (s)
+    
+num1 = int(input('Inserire primo numero:')) # aggiungo valori e parametri in shell in modo tale da non cambiare il codice se cambio numeri 
+num2 = int(input('Inserire secondo numero: '))
+
+print('{} + {} = {}'.format(num1, num2, somma(num1, num2)))
