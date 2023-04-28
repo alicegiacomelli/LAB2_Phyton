@@ -57,7 +57,8 @@ nome = input()
 #type(nome) esce class'str'
 nome = input('inserire nome: ')
 print('Il mio nome è ' + nome) # inserire alice
-# concatenazione delle stringhe
+
+# CONCATENAZIONE DELLE STRINGHE > SOLO CON STRINGHE  !!!!! 
 
 # NOTAZIONE FORMAT 
 # non serve convertire il tipo della variabile 
@@ -83,6 +84,8 @@ print('alla variabile è stato assegnato il valore ' + num + 'ed è di tipo ' +t
 # moltiplicazione *
 # esponente **
 # divisione /
+# divisione intera (solo parte intera) //
+# modulo % stampa la parte con la virgola
 
 a = 5
 b = 10
