@@ -42,8 +42,8 @@ print(x)
 print (somma(num1, num2))
 
 # perchè a b e non num1 num2 ???
-# se scrivo a e b in shell sono VARIABILI LOCALI e non sono definite, locale nella funzione
-# se scrivo num1 e num2 in shell sono VARIABILI GLOBALI, sono definite, posso accerdervi da ogni parte del programma
+# se scrivo a e b in shell sono VARIABILI LOCALI e non sono definite, locale nella funzione, parametri interni alla funzione 
+# se scrivo num1 e num2 in shell sono VARIABILI GLOBALI, sono definite, posso accerdervi da ogni parte del programma, richiamarle al bisogno
 
 # RETURN o PRINT?
 # return valore che ritorno 
@@ -87,3 +87,16 @@ num1 = int(input('Inserire primo numero:')) # aggiungo valori e parametri in she
 num2 = int(input('Inserire secondo numero: '))
 
 print('{} + {} = {}'.format(num1, num2, somma(num1, num2)))
+
+
+# Lezione 2 - 28.04
+
+# esercizio: area di un rettangolo
+def area (b, h):
+    a = b * h
+    return (a)
+
+base = 5
+altezza = 10
+x = area(base, altezza)
+print(x)
