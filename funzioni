@@ -177,3 +177,59 @@ def par_dispari(n):
     
 a = 5
 print(par_dispari(a))
+
+# esercizio 
+# True se numero compreso tra 0 e 10 -  0 < n < 10 
+# False se non è compreso
+# n >= 0 and n <= 10
+
+def num_compreso (n):
+    if n >= 0 and n <= 10: # and 
+        return True
+    return False
+
+n = 11
+print(num_compreso(n))
+
+# esercizio 
+# vediamo se la variabile che passiamo è di tipo stringa
+
+def tipo(a):
+    if type(a) == str:
+        return True
+    return False
+
+# in shell
+# >>> parola = 'banana'
+# >>> tipo(parola)
+# True
+# >>> n = 888
+# >>> tipo(n)
+
+# LUNGHEZZA PAROLA 
+# len 
+# in shell
+parola = 'scolapasta'
+len(parola)
+
+
+# esercizio
+# stringa a e stringa b
+# uguali = None
+# a > b True
+# a < b False
+
+def lunghezza(a, b):
+    if len(a) == len(b):
+        return None
+    elif len(a) > len(b):
+        return True
+    else:
+        return False
+
+str1 = 'avocado'
+str2 = 'papaya'
+
+print(str1, len(str1), str2, len(str2), lunghezza(str1, str2))
+
+
