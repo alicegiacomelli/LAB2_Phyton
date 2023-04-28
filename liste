@@ -1,0 +1,74 @@
+# LISTE 
+#[] valori separati da , 
+# possono contenere tutti i tipi di dati
+
+L = [] # lista vuota 
+L1 = ['patate', ...] 
+L2 = [23, 6.9, 'albero', ['banana, 11], 88]
+
+print(L2[3]) # posizione 3, della lista 2 quindi stampa albero 
+
+# RANGE e LISTA 
+r = range(11) # creo una variabile range, primi 11 valori 
+r1 = range (0, 55, 5) # specifico numero di partenza e arrivo e passo, numeri che salta)
+
+r_list = list(r) # nell'output tutti i numeri 0,11
+r1_list = list(r1) # tabellina del 5 senza 55 perchè il pc parte a contare da 0 
+
+print(r)
+print(r1)
+print(r_list)
+print(r1_list)
+
+# esercizio: stampo lista, che tipo di dato è, lunghezza
+
+L = ['patata', 'banana', 'carciofi']
+print(L, type(L), len(L))
+
+# parto da una lista di interi, vado a stampare tutti i valori
+lista = [2, 3, 5, 6, -4, 8, 8, 9, -9]
+for element in lista:
+    print(element**3) # valore elementi al cubo
+    
+for element in lista:
+    print(element)
+
+# quante volte compare un valore nella lista
+
+def conta_el(1, n): # parametro: lista, numero
+    c = 0 # creo una varibaile contatore
+    for el in 1:
+        if el == n:
+            c = c+1 # incrementa il contatore
+        else:
+            pass # passa non fa niente e il contatore va avanti
+    return c
+
+lista = [2, 3, 5, 6, -4, 8, 8, 9, -9]
+print(conta_el(lista, 8)
+
+############### APPENDERE VALORI  
+
+# append
+# aggiungere elemento sempre alla fine della lista
+def insert_input():
+    L = [] # dichiaro lista vuota
+    for el in range(10): # possiamo aggiungere valori finchè non arriviamo a 10
+        b = input()
+        L.append(b)
+    print(L)
+
+insert_input()
+
+# inserimento random nella lista
+from random import * # inizio script
+
+def insert_random(n, L):
+    L = [] # dichiaro lista vuota
+    for el in range(10):
+        b = radint(0, 10) # randint : per aggiungere dati random
+        L.append(b) # occhio intendenzioni!
+    print(L)
+    if n in L:
+        print('Il numero {} è presente 
+        ..................
