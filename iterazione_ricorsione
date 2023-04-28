@@ -1,0 +1,51 @@
+# iterazione
+
+def conto_alla_rovescia_iter(n):
+    if n == 0:
+        print ('Fine conto alla rovescia!')
+    else:
+        print(n)
+        conto_alla_rovescia_iter(n-1)
+    
+conto_alla_rovescia_iter(10)
+
+
+# ricorsione
+
+def conto_alla_rovescia_ric(n):
+    while n > 0:
+        print(n)
+        n = n -1
+    print(' Fine conto alla rovescia!')
+
+conto_alla_rovescia_ric(10)
+
+# range
+# non ha parametro
+# ciclo for 
+
+def conto_alla_rovescia_for():
+    cont = range (0, 11)
+    for i in cont:
+        print(i)
+        
+conto_alla_rovescia_for()
+    
+# calcolo fattoriale
+# ricorsivo
+
+def fatt(n):
+    if n == 0:
+        return 1
+    return n*fatt(n-1)
+
+# iterativo
+# ciclo for
+
+def fatt_iter(n):
+    red = 1 # creo una variabile che poi avrà valore diverso
+    for i in range(1, n+1): # n+1 valore che noi passiamo come parametro +1
+        res *= 1 # res = res * 1 # ogni ciclo verrà incrementato 
+    return res # mi restituisce il valore di res incrementato 
+# ciclo gira finche una condizione non viene soddisfatta
+ 
