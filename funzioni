@@ -44,6 +44,8 @@ print (somma(num1, num2))
 # perchè a b e non num1 num2 ???
 # se scrivo a e b in shell sono VARIABILI LOCALI e non sono definite, locale nella funzione, parametri interni alla funzione 
 # se scrivo num1 e num2 in shell sono VARIABILI GLOBALI, sono definite, posso accerdervi da ogni parte del programma, richiamarle al bisogno
+# VARIABILI GLOBALI E LOCALI POSSONO AVERE STESSO NOME !!!!!!
+
 
 # RETURN o PRINT?
 # return valore che ritorno 
@@ -100,3 +102,78 @@ base = 5
 altezza = 10
 x = area(base, altezza)
 print(x)
+
+# esercizio: area del cerchio
+# raggio al quadrato per pi
+
+from math import * # richiamare sempre la libreria math a inizio codice 
+
+def area_cer (r):
+    area = (r**2) * pi
+    return area
+
+raggio = 5
+print(area_cer(raggio))
+
+# variabili globali e locali possono avere lo stesso nome !!!!!!
+
+# troncare cifra decimale
+x = 78.53981633974483
+x = round(x, 5)
+
+# esecizio: funzione con parametri ore, minuti e secondi
+# calcolare secondi totali
+
+def secondi_totali(h,m,s):
+    sec_tot = (h*3600) + (m*60) + s
+    return sec_tot
+
+h = 4
+m = 45
+s = 15
+# print(secondi_totali(h, m, s))
+# posso anche dichiarare i valori direttamente
+print(secondi_totali(4, 45, 15))
+
+############################# ESECUZIONE CONDIZIONALE 
+
+# procedimento per valutare le condiioni che ci sono tra variabili 
+# se voglio sapere se una variabile (valore assegnato a variabile) è maggiore di  un'altra
+
+# if, elif, else
+# =
+# == per confronti
+# >
+# <
+
+def num_max (a,b):
+    if a > b : # prima condizione
+               # fine ogni condizione :
+        return a # restituiscimi il valore maggiore
+    elif b > a : # seconda condizione
+        return b
+    elif a == b : # oppure else: senza specificare la condizione
+        return False
+    
+num1 = int(input('Inserire numero 1: '))
+num2 = int(input('Inserire numero 2: '))
+print(num_max(num1, num2))
+
+# oppure 
+
+num1 = int(input())
+num2 = int(input())
+print('Il numero maggiore è {}'.format(num_max(num1,num2)))
+
+# esercizio 
+# true se numero è pari
+# false se numero dispari
+
+def par_dispari(n):
+    if n % 2 == 0: # modulo, n diviso 2, non c'è resto
+        return True
+    else:   # posso anche omettere e mettere solo return False (False e True con lettera maiuscola !!!)
+        return False
+    
+n = input()
+print(par_dispari(n))
