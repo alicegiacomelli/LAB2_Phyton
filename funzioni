@@ -175,5 +175,5 @@ def par_dispari(n):
     else:   # posso anche omettere e mettere solo return False (False e True con lettera maiuscola !!!)
         return False
     
-n = input()
-print(par_dispari(n))
+a = 5
+print(par_dispari(a))
